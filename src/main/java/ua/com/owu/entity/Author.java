@@ -45,6 +45,15 @@ public class Author {
         this.name = name;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+
+        return id;
+    }
+
     public String getSurname() {
         return surname;
     }

@@ -20,7 +20,7 @@ public class Book {
     private String description;
     private int year;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY,mappedBy = "book")
+    @OneToMany(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY,mappedBy = "book")
     private List<Author> authors=new ArrayList<>();
 
 
